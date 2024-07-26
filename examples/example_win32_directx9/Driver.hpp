@@ -28,11 +28,11 @@ public:
         };
 
         std::map<std::string, KeyFunction> urls;
-        LPCWSTR arduino_port = L"COM3"; // Change to your actual COM port
+        LPCWSTR arduino_port = L"COM3";
         DWORD baudrate = CBR_9600;
-        int debounce_time = 2; // Debounce time in seconds
+        int debounce_time = 2;
         std::chrono::time_point<std::chrono::steady_clock> last_opened_time;
     };
 };
 
-#endif // DRIVER_HPP
+#endif

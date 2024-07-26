@@ -1,11 +1,11 @@
 #include "Driver.hpp"
-#include <shellapi.h> // For ShellExecuteA
-#include <mmsystem.h> // For PlaySoundA
+#include <shellapi.h>
+#include <mmsystem.h>
 #include <fstream>
 #include <iostream>
-#include <thread> // For std::this_thread::sleep_for
+#include <thread>
 
-#pragma comment(lib, "Winmm.lib") // Link with Winmm.lib for PlaySoundA
+#pragma comment(lib, "Winmm.lib")
 
 void DriverHandler::Buttons::open_url(const std::string& url) {
     std::cout << "Attempting to open URL: " << url << std::endl;

@@ -134,7 +134,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
             if (show_main_button_window)
             {
                 ImGui::Begin("Main window");
-                ImGui::Text("Stream deck");
+                ImGui::Text("StreamDeck");
                 if (ImGui::Button("Button 1 settings"))
                 {
                     strncpy(key, "1", sizeof(key));
